@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="assets/css/onepage-scroll.css">
+      <link href="assets/css/metro.css" rel="stylesheet">
+      <link href="assets/css/metro-icons.css" rel="stylesheet">
+      <link href="assets/css/metro-responsive.css" rel="stylesheet">
+      <link href='assets/fonts/Righteous' rel='stylesheet' type='text/css'>
+      <link href='assets/fonts/Voltaire' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/styl.css">
+      <style type="text/css">
+      <title>Travelku</title>
+      <style type="text/css">
+       #p{
+       color: #ff00ff;
+       font-size: 20px;
+       font-weight: bold;
+       font-family:Rockwell, Calibri, Monospace;
+       font-style : oblique; 
+       }
+       #p1{
+       color:#0000FF;
+       font-size: 1em;
+       font-weight: normal;
+       font-variant: small-caps;
+       font-family: Andale Mono;}
+       #header{
+         widht: 50%;
+         height: 100px;
+         background color: #02a2db;
+         position: relative;
+       }
+       .header{
+           width: 20%;
+           height: 50px;
+       }
+       </style>
+  <style type="text/css">
+      .jumbotron {
+        position: relative;
+        background: url("img/g1.jpg") left;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+  <header>
+          <div class="app-bar red" data-role="app-bar red">
+              <img src="img/offers.jpg">
+                     <a class="app-bar-element branding">TRAVELKU</a>
+                      <span class="app-bar-divider"></span>
+                         <div class="app-bar" data-role="appbar">
+                             <a class="app-bar-element" href="#about">about</a>
+                             <span class="app-bar-divider"></span>
+                             <ul class="app-bar-menu">
+                                 <li><a href="#offers">offers</a></li>
+                                 <li><a href="#profil">profil</a></li>
+                                 <li><a href="#keluhan">keluhan</a></li>
+                                 <li><a href="#Moto">Moto</a></li>
+                              </ul>
+                           <div class="app-bar-element place-right">
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                               <ul class="nav navbar-nav navbar-right">
+                                 <li><a href="#promo" class="page-scroll">Promo </a></li>
+                                 <li><a href="#galeri" class="page-scroll">Galeri</a></li>
+                                 <li><a href="#kontak" class="page-scroll">Hubungi</a></li>
+                               </ul>
+                            </div>
+                           </div>
+                         </div>
+                      </div>
+
+                         
+
+                 <div>
+                       <marquee>SELAMAT DATANG DI TRAVELKU</marquee>
+                 </div>
+                 <div id="clockDisplay" class="clockStyle">
+                  
+                 </div>
+                       <script type="text/javascript" language="javascript">
+                             function renderTime(){
+                             var currentTime = new Date();
+                             var h = currentTime.getHours();
+                             var m = currentTime.getMinutes();
+                             var s = currentTime.getSeconds();
+                             if (h == 0){
+                             h = 24;
+                             }
+                             if (h < 10){
+                             h = "0" + h;
+                             }
+                             if (m < 10){
+                             m = "0" + m;
+                             }
+                             if (s < 10){
+                             s = "0" + s;
+                             }
+                             var myClock = document.getElementById('clockDisplay');
+                             myClock.textContent = h + ":" + m + ":" + s + "";    
+                             setTimeout ('renderTime()',1000);
+                             }
+                          renderTime();
+                       </script>
+   </header>
+        <div class="main">
+            <section class="page one">
+                  <div class="row cells4">
+                      <div  class="cell colspan3">
+                          <ul class="v-menu">
+                              <ul class="v-menu">
+                                  <li class="menu-title">beranda</li>
+                                    <li><a href="#Home"><span class="mif-home icon"></span> Home </a></li>
+                                        <li class="divider"></li>
+                                        <li class="menu-title">second tittle</li>
+                                    <li><a href="#"><span class="mif-user icon"></span> Profile </a></li>
+                                    <li><a href="#"><span class="mif-calendar icon"></span> Calendar</a></li>
+                                    <li><a href="#"><span class="mif-image icon"></span> Photo</a></li>
+                                          <li  class="divider"></li>
+                                          <li class="menu-title">laporan</li>
+                                             <li>
+                                                 <a href="#" class="dropdown-toggle"><span class="mif-my-location icon"></span> Location</a>
+                                                 <ul class="d-menu" data-role="dropdown"></ul>                        
+                                             </li>
+                                             <li>
+                                                <div class="item-block text-center">
+                                                  <button class="square-button"><img class="icon" src="images/round.png"></button>
+                                                  <button class="square-button"><img class="icon" src="images/location.png"></button>
+                                                  <button class="square-button"><img class="icon" src="images/group.png"></button>
+                                                </div>
+                                             </li>
+                                            
+                                            
+                                            <li  class="divider"></li>
+                                            <li><a href="#"><span class="mif-bubbles icon"></span> Community</a></li>
+                                       </ul>
+                                   </ul>
+                </section>
+<section class="keluhan" id="keluhan">
+    <div class="container">
+       <div class="row">
+          <label for="pesan">Laporan</label>
+                <textarea class="form-control" rows="10" placeholder="Masukan Pesan Anda"></textarea>
+        </div> 
+              <button type="submit" class="btn btn-primary">Kirim</button>
+      </div>
+</section> 
+<section class="about" id="about">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Sebuah perusahaan yang bergerak pada bidang transportasi untuk melakukan perjalanan wisata atau berpergian anda dengan pelayanan yang ramah saat perjalanan serta harga murah dan ada promo disetiap bulannya</h2>
+            </div>
+          </div>
+      </div>
+</section>
+<section class="Moto" id="Moto">
+  <div class="container">
+     <div class="row">
+       <div class="col-sm-4">
+        <h2>
+          Pelayanan yang menyenangkan terhadap pelanggan adalah nomor satu di perusahaan kami
+           Pelanggan senang karyawan senang
+        </h2>
+               <img src="img/porfolio/5.JPG">
+       </div>
+     </div>
+  </div>
+</section>
+<section class="offers" id="offers">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <h2>TRAVELKU
+                   lokasi sangat sangat strategis mudah dijangkau oleh masyarakat</h2>
+               <img src="assets/img/offers.png">
+            </a>
+          </div>
+        </div>    
+    </div>
+</section>
+   
+<section class="Home" id="Home">
+     <div class="container">
+        <div class="row">
+          <h2>Sebuah perusahaan yang bergerak pada bidang transportasi untuk melakukan perjalanan wisata atau berpergian anda dengan pelayanan yang ramah saat perjalanan serta harga murah dan ada promo disetiap bulannya</h2>
+        </div>
+     </div>
+      
+</section>
+<section class="profil" id="profil">
+   <div class="container">
+      <div class="row">
+           <h2>Akun</h2>
+              <div  class="input-control text auto-size padding14">
+                 <center><span class="placeholder">  Nama  </span>
+                           <input type="text">
+                         <span class="placeholder">  Alamat  </span>
+                           <input type="text">
+                         <span class="placeholder"> agama </span>
+                           <input type="text">
+                         <span class="placeholder"> pekerjaan </span>
+                           <input type="text">    
+                         <span class="notranslate" onmouseover="_tipon(this)" onmouseout="_tipoff()"><span class="google-src-text" style="direction: ltr; text-align: left"><button>Oke</button></span> <button> Batal </button></span>
+                 </center>
+             </div>
+                                           
+        </div>
+      </div>
+   </div>
+</section>
+<section class="promo" id="promo">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+              <h2 class="text-left">Promosi</h2>
+              <hr align="left">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 ">
+              <img src="img/g2.JPG" alt="g2"><a>Murah</a>
+              <p class="text-left"> Nikmati penerbangan untuk setiap tiket penerbangan domestik, Terdapat diskon setiap bulan.</p>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/g3.JPG" alt="g3"><a>Transaksi Mudah dan Aman</a>
+              <p> Kami menjamin setiap transaksi Anda melalui sertifikat yang terontetifikasi dan di dukung oleh teknologi terbaik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section> 
+
+<section class="kontak" id="kontak">
+     <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+             <h2>kontak</h2>
+            <form>
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" class="form-control" placeholder="Masukan Nama Anda">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Masukan Email Anda">
+              </div>
+              <div class="form-group">
+                <label for="telp">No Telepon</label>
+                <input type="tel" id="telp" class="form-control" placeholder="Masukan Nomor Telepon Anda">
+              </div>
+              <select class="form-control">
+                 <option>--Pilih Kategori--</option>
+                 <option>Kelas Atas</option>
+                 <option>Kelas Menegah</option>
+                 <option>Kelas Standar</option>
+              </select>
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea class="form-control" rows="10" placeholder="Masukan Pesan Anda"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+</section>
+<section class="galeri" id="galeri">
+   <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="text-left">Galeri</h2>
+            <hr  align="left" width="200px">
+          </div>
+        </div>
+        <!-- awal gambar -->
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+               <img src="img/thumbnail/porfolio/1.JPG">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+               <img src="img/thumbnail/porfolio/2.JPG">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#thumbnail" class="thumbnail">
+               <img src="img/thumbnail/porfolio/3.JPG">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#thumbnail" class="thumbnail">
+               <img src="img/thumbnail/porfolio/4.JPG">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#thumbnail" class="thumbnail">
+               <img src="img/thumbnail/porfolio/5.JPG">
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#thumbnail" class="thumbnail">
+               <img src="img/thumbnail/porfolio/6.jpg">
+            </a>
+          </div>
+        </div>
+        <!-- akhir gambar -->
+      </div>
+
+</section>
+                 
+                     <div div class="main">
+                         <script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
+                         <script type="text/javascript" src="assets/js/jquery.onepage-scroll.js"></script>
+                         <script type="text/javascript">
+                            $(".main").onepage_scroll({
+                              sectionContainer: "section",
+                               easing: "cubic-bezier(0.180, 0.900, 0.410, 1.210)"
+                            });
+                         </script>
+                         <script src="js/jquery-3.2.1.min.js"></script>
+                         <script src="js/jquery.easing.1.3.js"></script>
+                         <script src="js/bootstrap.min.js"></script>
+                         <script src="js/script.js"></script>
+                     </div>
+  
+</body>
+</html>
